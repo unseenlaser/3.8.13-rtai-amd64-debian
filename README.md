@@ -38,7 +38,7 @@ cd RTAI
 
 autogen.sh
 
-make menuconfig (set the number of cpus to the same as you machine and the kernel setting and turn OFF kernel maths support)
+make menuconfig (set the number of cpus to the same as your machine and the kernel config setting and turn OFF kernel maths support)
 
 ./configure
 
