@@ -1,0 +1,11 @@
+--- linux-3.8.13a/arch/x86/Makefile	2013-05-11 16:57:46.000000000 -0400
++++ linux-3.8.13b/arch/x86/Makefile	2014-04-14 17:07:04.300722131 -0400
+@@ -137,7 +137,7 @@
+ #
+ KBUILD_CFLAGS += -fno-asynchronous-unwind-tables
+ # prevent gcc from generating any FP code by mistake
+-KBUILD_CFLAGS += $(call cc-option,-mno-sse -mno-mmx -mno-sse2 -mno-3dnow,)
++#KBUILD_CFLAGS += $(call cc-option,-mno-sse -mno-mmx -mno-sse2 -mno-3dnow,)
+ KBUILD_CFLAGS += $(call cc-option,-mno-avx,)
+ 
+ KBUILD_CFLAGS += $(mflags-y)
