@@ -68,15 +68,10 @@ open rtapi.ini
 
 edit last section to read
 
-#################################################
-# _cfg_flavor flavor section
-#
-[flavor_rtai-kernel]
-# These values do not normally need to be changed.
-rtapi_app=/usr/src/machinekit/libexec/rtapi_app_rtai-kernel
+'rtapi_app=/usr/src/machinekit/libexec/rtapi_app_rtai-kernel
 RTS=/usr/realtime/bin/rtai-config
 RTDIR=/usr/realtime/modules
-MODULES=rtai_hal rtai_sched xeno_math
+MODULES=rtai_hal rtai_sched xeno_math'
 
 ie ensure xeno_math is loaded not rtai_math, which has not been built
 
